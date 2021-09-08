@@ -4,6 +4,8 @@
 # Written by twojstaryzdomu (twojstaryzdomu@users.noreply.github.com), 2021
 #
 
+# Avoid error with empty images
+$ENV{MTOOLS_PERMIT_EMPTY}           = 1;
 # Undefine to disable upper-casing short names
 my $uc                              = 1;
 my ( $cmd, $archive, @args )        = @ARGV;
